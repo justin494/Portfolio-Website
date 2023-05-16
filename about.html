@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>About</title>
+    <title>Justin's Portfolio</title>
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" /> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
@@ -47,7 +47,7 @@
         }
     }
     
-    * {              
+    * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
@@ -62,9 +62,8 @@
     }
     
     .navbar {
-
         display: flex;
-        align-items: right;
+        align-items: center;
         justify-content: space-between;
         padding: 20px;
         background-color: rgb(0, 0, 0);
@@ -171,7 +170,7 @@
     
     .example {
         background-image: url("imge.jpg");
-        height: 3500px;
+        height: 4000px;
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
@@ -223,11 +222,11 @@
     @keyframes slide-in {
         0% {
             opacity: 0;
-            transform: translateY(50%);
+            transform: translateX(50%);
         }
         100% {
             opacity: 1;
-            transform: translateY(0);
+            transform: translateX(0);
         }
     }
     
@@ -236,7 +235,7 @@
     }
     /* center the content */
     
-    body {  
+    body {
         font-family: Arial, Helvetica, sans-serif;
     }
     /* style the sections */
@@ -279,7 +278,11 @@
     /* add hover effect */
     
     section:hover {
-        background-color: #000;
+        background-image: url("bgg.jpg");
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
         color: #fff;
     }
     
@@ -288,10 +291,10 @@
     }
 </style>
 
-<body><center>
+<body>
     <nav class="navbar">
-        <p></p>
-      
+
+        <div class="logo"><img src="logo.gif" width="70" height="70"></div>
 
         <ul class="nav-links">
 
@@ -301,25 +304,29 @@
                 <li><a href="contact.html">CONTACT</a></li>
             </div>
         </ul>
-    </nav></center>
+    </nav>
     <div class="example">
         <div class="profile-image">
-            <center><img class="pic" src="j.jpg" width="330" height="400"></center>
+            <center><img class="pic" src="j.jpg" width="400" height="500"></center>
         </div>
         <center class="pad">
             <section id="about-me">
+
                 <h2>About Me</h2>
                 <p>Hello! I am <b>Saharsh Justin Mathias</b> and I'm a 3rd year CSE student at VIT Vellore. I am a optimist person, I always try to see good in a bad situation, learn from my mistakes, work harder and do better. I like working and connecting
                     with people a lot, my ability to communicate effectively with my peers has been critical to my success as a manager in a number of projects. I'm a self taught coder, I started coding at the age of 15, I'm skilled in JAVA, Python, and
                     C. I also have experience in HTML, CSS, PHP, SQL and JAVAFX. </p>
-            </section>
+            </section><br>
+
 
             <section id="education">
+                <img src="edu.png" style="height: 300px;width: 300px;" alt=""><br><br>
                 <h2>Education</h2>
                 <p>I have done my schooling from St. Pauls college Lucknow with a 91% in 10th (ICSE) and 90% in 12th (ISC). Currently I'm a 4th year M.Tech Integrated Computer Science Engineering student at VIT Vellore </p>
-            </section>
+            </section><br>
 
-            <section id="skills">
+            <section id="skills"><br>
+                <img src="ski.png" style="height: 200px;width: 300px;" alt=""><br><br>
                 <h2>Skills</h2>
                 <div class="lang">
 
@@ -330,14 +337,11 @@
                 </div>
                 <br>
                 <p>I'm a self taught coder, I started coding at the age of 15, I'm skilled in JAVA, Python3, and C. I also have experience in HTML, CSS, PHP, SQL, JAVA Script, Angular JS and JAVAFX.</p>
-            </section>
+            </section><br>
 
-            <section id="hobbies">
-                <h2>Hobbies</h2>
-                <p>I’m passionate about reading. Although I have several hobbies, such as watching movies, hiking, playing football and video games, reading books is what resonates well with me.</p>
-            </section>
 
-            <section id="achievements">
+            <section id="achievements"><br>
+                <img src="ac2.png" style="height: 250px;width: 300px;" alt=""><br><br>
                 <h2>Achievements</h2>
                 <p>I have won many awards and certificates in debate, sketching and other co-curricular activities.</p>
                 <p>Some of my recent achievements are:</p>
