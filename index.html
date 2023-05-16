@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="HandheldFriendly" content="true">
-    <title>Home</title>
+    <title>Justin's Portfolio</title>
 </head>
 <style>
     /* Media Queries: Tablet Landscape */
@@ -68,6 +68,7 @@
     }
     
     .navbar {
+        position: static;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         grid-gap: 20px;
@@ -115,7 +116,7 @@
         grid-gap: 20px;
         height: 100vh;
         background: url('imge.jpg');
-        height: 1200px;
+        height: 1200px;
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
@@ -129,47 +130,41 @@
     }
     
     .container {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        grid-gap: 20px;
         color: #e5e5e5;
         font-size: 2.0rem;
         text-transform: uppercase;
-        height: 100vh;
+        height: 20vh;
         display: flex;
         align-items: center;
         justify-content: center;
         position: absolute;
-        top: 70%;
+        top: 80%;
         left: 50%;
-        padding: 0px;
+        padding: 50px;
         transform: translate(-50%, -50%);
+        transition: 3s ease-in;
     }
     
     @keyframes changeText {
         0% {
-            content: "Hello! 👋🏼, I'm Saharsh Justin";
-            color: white;
-            background-color: black;
+            content: "Hello!👋🏼 , I'm Saharsh Justin Mathias";
+            color: rgb(0, 0, 0);
             padding: auto;
         }
         33% {
-            content: "Hello! 👋🏼, I'm a Web Developer";
-            color: black;
-            background-color: rgb(230, 214, 214);
+            content: "Hello!👋🏼 , I'm a Web Developer";
+            color: rgb(0, 0, 0);
             padding: auto;
         }
         66% {
-            content: "Hello! 👋🏼, I'm an AI/ML Enthusiast";
-            color: white;
-            background-color: rgb(44, 44, 44);
+            content: "Hello!👋🏼 , I'm an AI/ML Enthusiast";
+            color: rgb(0, 0, 0);
             padding: auto;
             ;
         }
         100% {
-            content: "Hello! 👋🏼, I'm Saharsh Justin";
-            color: rgb(255, 255, 255);
-            background-color: rgb(0, 0, 0);
+            content: "Hello!👋🏼 , I'm Saharsh Justin";
+            color: rgb(0, 0, 0);
             padding: auto;
         }
     }
@@ -178,6 +173,18 @@
         content: "Hello! 👋🏼, I'm Saharsh Justin Mathias";
         animation: changeText 8s ease-out infinite;
         padding: auto;
+    }
+    
+    .hi {
+        height: 45vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        padding: 50px;
+        transform: translate(-50%, -50%);
     }
 </style>
 
@@ -196,13 +203,17 @@
         </ul>
     </nav>
 
-    <section class="bgimage" id="home">
+    <div class="bgimage" id="home"> </div>
+    <section id="ss">
+        <center><img class="hi" src="hi.gif"></center>
+
+        <div class="container ">
+            <center>
+                <p style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-weight:400; "></p>
+            </center>
+        </div>
     </section>
-    <section class="container">
-        <center>
-            <p></p>
-        </center>
-    </section>
+
 
 
 </body>
